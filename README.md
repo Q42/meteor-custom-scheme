@@ -21,7 +21,7 @@ App.configurePlugin('cordova-plugin-customurlscheme', {
 });
 ```
 
-### Listen for an URL
+### Listen for an URL - (This doesn't work yet, working on it...)
 When the app is opened using the custom url scheme, the Meteor.onCustomScheme(callback) function is called.
 You can use this as an event to easily subscribe to, and to create your own logic for when this happens.
 
