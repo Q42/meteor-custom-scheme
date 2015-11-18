@@ -1,5 +1,5 @@
 # Custom Scheme
-__A wrapper for the Cordova Custom-URL-scheme plugin by EddyVerbruggen__
+__A wrapper for the Cordova [Custom-URL-scheme plugin](https://github.com/EddyVerbruggen/Custom-URL-scheme) by EddyVerbruggen__
 
 [![Build Status][travis-image]][travis-url]
 
