@@ -21,5 +21,15 @@ App.configurePlugin('cordova-plugin-customurlscheme', {
 });
 ```
 
+### Listen for an URL
+When the app is opened using the custom url scheme, the Meteor.onCustomScheme(callback) function is called.
+You can use this as an event to easily subscribe to, and to create your own logic for when this happens.
+
+```JavaScript
+Meteor.onCustomScheme(function(url){
+  // Use the url here
+});
+```
+
 [travis-url]: https://travis-ci.org/Q42/meteor-custom-scheme
 [travis-image]: http://img.shields.io/travis/Q42/meteor-custom-scheme.svg
