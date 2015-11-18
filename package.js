@@ -34,7 +34,7 @@ Package.onTest(function(api) {
   api.use('q42:custom-scheme');
   // Tests will follow soon!
   api.addFiles([
-    'test/client/scheme.test.js',
-    'test/client/inject.test.js'
+    'test/client/event.test.js',
+    'test/server/inject.test.js'
   ]);
 });
