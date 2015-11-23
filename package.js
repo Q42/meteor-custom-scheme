@@ -1,6 +1,6 @@
 Package.describe({
   name: 'q42:custom-scheme',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'A wrapper for the Cordova Custom-URL-scheme plugin by EddyVerbruggen',
   git: 'https://github.com/Q42/meteor-custom-scheme',
   // By default, Meteor will default to using README.md for documentation.
@@ -12,19 +12,12 @@ Cordova.depends({
   "cordova-plugin-customurlscheme": "4.0.0"
 });
 
-Npm.depends({
-  'connect-inject': '0.4.0'
-});
-
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.1');
+  api.versionsFrom('1.3.0');
   api.use('ecmascript');
   api.addFiles(
     'client/event.js',
     'client');
-  api.addFiles(
-    'server/inject.js',
-    'server');
   api.use('webapp', 'server');
 });
 
@@ -33,8 +26,7 @@ Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('q42:custom-scheme');
   // Tests will follow soon!
-  api.addFiles([
-    'test/client/event.test.js',
-    'test/server/inject.test.js'
-  ]);
+  api.addFiles(
+    'test/client/event.test.js'
+  );
 });

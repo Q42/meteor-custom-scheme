@@ -7,7 +7,6 @@ Meteor.onCustomScheme = function(callback) {
 };
 
 const onStart = function(){
-    alert("on resume");
     setTimeout(() => {
         if(window.customSchemeUrl) {
             events.forEach((callback) => {
