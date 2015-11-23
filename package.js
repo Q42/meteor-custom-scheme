@@ -1,6 +1,6 @@
 Package.describe({
   name: 'q42:custom-scheme',
-  version: '0.1.1',
+  version: '0.1.2',
   summary: 'A wrapper for the Cordova Custom-URL-scheme plugin by EddyVerbruggen',
   git: 'https://github.com/Q42/meteor-custom-scheme',
   // By default, Meteor will default to using README.md for documentation.
